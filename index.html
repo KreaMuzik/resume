@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./styles/index-styles/general.css">
+    <head></head>
+    <body>
+        <section>
+            <div class="introduction">
+                <h1>ROBERT CASE</h1>
+                <p>LEAD FACILITIES COORDINATOR</p>
+            </div>
+        </section>
+<!--Professional Summary Container-->
+        <section>
+            <div class="container reveal">
+                <h2>PROFESSIONAL SUMMARY</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <p>Lead Facilities Coordinator with 5+ years’ experience of facility management and operations. Highly skilled in managing subcontracted and managed suppliers, coordinating maintenance for the facility, and providing exceptional customer service.  Demonstrates leadership, problem solving abilities, and exceptional organizational skills to deliver quality services and meet key performance indicators. I possess a deep enthusiasm for technology and a strong desire to leverage my current certified technical support skills to pivot my career into the technical world as well as further growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Experience Container-->
+        <section>
+            <div class="container reveal">
+                <h2>EXPERIENCE</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>LEAD FACILITIES COORDINATOR</h3>
+                        <p>Jones Lang LaSalle, VMware Account</p>
+                        <p>Austn, TX</p>
+                        <p>Jul 2018 - Present</p>
+                        <br>
+                        <ul>
+                            <li>Oversees the operations and maintenance of two offices, encompassing a total space of 200,000 square feet. Additionally, I am responsible for leading a team of seven Facilities Coordinators, Workplace Ambassador, Shipping & Receiving Coordinator, and Porter staff.</li>
+                            <li>Responsible for managing a substantial operational budget of one million dollars. Ensures budget is in line with maintenance, projects, and other operational expenses within the budget period to avoid variances. </li>
+                            <li>Oversees and coordinates the relationships with fifteen plus external vendors and suppliers. This involves sourcing, evaluating, and selecting vendors, and ensuring adherence to established service level agreements and performance standards. My responsibilities also include conducting regular vendor performance reviews, addressing any issues or concerns that may arise, and identifying opportunities to optimize vendor relationships to drive value and achieve organizational goals.</li>
+                            <li>Diligently conducts facility walkthroughs to systematically assess the operational functionality and condition of the premises. To include promptly identifying and addressing repairs and proactively mitigating any protentional hazards or safety concerns.</li>
+                        </ul>
+                    </div>
+                    <div class="text-card">
+                        <h3>SECURITY OFFICER</h3>
+                        <p>Allied Universal, VMware Account</p>
+                        <p>Austin, TX</p>
+                        <p>Sep 2017 – Jun 2018</p>
+                        <br>
+                        <ul>
+                            <li>Regularly conducted thorough patrols within the workplace premises to safeguard the well-being and security of employees, mitigating potential risks from any suspicious individuals or environmental safety hazards.</li>
+                            <li>Responsible for creating a comprehensive daily report to the company’s headquarters, outlining significant events and occurrences that transpired during my shift.</li>
+                            <li>Successfully developed and implemented a comprehensive Security Playbook for the Austin site, and subsequently ensuring its ongoing adherence and effectiveness.  This playbook consisted of daily operations, badge processing, access, new hire processes, and emergency response procedures.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Skills Container-->
+        <section>
+            <div class="container reveal">
+                <h2>SKILLS</h2>
+                <div class="cards">
+                    <div class="text-card">
+                        <div class="skills-list">
+                            <p>Technical Support</p>
+                            <p>Time Management</p>
+                            <p>Customer Serivce</p>
+                            <p>Budget Management</p>
+                            <p>Vendor Management</p>
+                            <p>Team Leadership</p>
+                            <p>Troubleshooting</p>
+                            <p>Strategic Planning</p>
+                            <p>Problem Solving</p>
+                            <p>Inventory Management</p>
+                            <p>Windows, Apple, Android, and Linux</p>
+                            <p>Microsoft Suites</p>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Professional Development Container-->
+        <section>
+            <div class="container reveal">
+                <h2>PROFESSIONAL DEVELOPMENT</h2>
+                <div class="cards">
+                    <div class="certs">
+                        <div class="text-card">
+                            <h3>ITF+</h3><br>
+                            <a href="https://www.credly.com/badges/e1b1216c-7b53-4a13-9461-d2915a47c46e?source=linked_in_profile" target="_blank">Verify Here</a><br><br>
+                            <p>ISSUED 2021</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>GOOGLE IT SUPPORT</h3><br>
+                            <a href="https://www.coursera.org/account/accomplishments/professional-cert/XGSTFNU2KWC7" target="_blank">Verify Here</a><br><br>
+                            <p>ISSUED 2019</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>PYTHON PROGRAMMING</h3><br>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/JMHB9C8MNH3L" target="_blank">Verify Here</a><br><br>
+                            <p>ISSUED 2018</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>FACILITY MANAGEMENT PROFESSIONAL</h3><br>
+                            <a href="https://ifma.learningbuilder.com/Workflow/RenderPdfForAction?WorkflowInstanceId=271295&StepId=89&StepActionIdToPerform=500" target="_blank">Verify Here</a><br><br>
+                            <p>ISSUED 2023</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>ADULT FIRST-AID/CPR/AED</h3>
+                            <p>RENEWED 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--JavaScript for creating transition-->
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="footer-container">
+            <a href="https://www.linkedin.com/in/robert-lee-case/" class="footer-icons" target="_blank">LinkedIn</a><br>
+            <a href="https://github.com/KreaMuzik" class="footer-icons" target="_blank">GitHub</a><br><br>
+            <p>Create By: Robert Case</p>
+            <p>Central, TX</p>
+        </div>
+    </footer>
+</html>

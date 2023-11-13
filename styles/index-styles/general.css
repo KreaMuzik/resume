@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.introduction{
+    text-align: center;
+}
+
+body{
+    background-color: #413F42;
+}
+
+.skills-list{
+    text-align: center;
+}
+
+.certs{
+    text-align: center;
+}
+
+.certs a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #DCD7C9;
+    border: 2px solid #DCD7C9;
+    border-radius: 8px;
+    padding: 3px;
+
+}
+.certs a:hover{
+    transition: all 1s ease;
+    background-color: #61A3BA;
+}
+
+section{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1){
+    color: #DCD7C9;
+}
+
+section:nth-child(2){
+    color: #413F42;
+    background: #DCD7C9;
+}
+
+section:nth-child(3){
+    color: #DCD7C9;
+}
+
+section:nth-child(4){
+    color: #413F42;
+    background: #DCD7C9;
+}
+
+section:nth-child(5){
+    color: #DCD7C9;
+}
+
+section .container{
+    margin: 100px;
+    max-width: 1500px;
+}
+
+section h1{
+    font-size: 60px;
+}
+
+section h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+section p{
+    font-size: 20px;
+}
+
+section .cards{
+    display: grid;
+}
+
+section .cards .text-card{
+    background: transparent;
+    margin: 20px;
+    padding: 20px;
+}
+
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 40px;
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+footer{
+    min-height: 15vh;
+    padding-top: 40px;
+    display: grid;
+    text-align: center;
+    background-color: #fff;
+    color: #413F42;
+}
+
+.footer-icons{
+    text-decoration: none;
+    color: #413F42;
+}
