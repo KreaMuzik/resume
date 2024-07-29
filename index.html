@@ -1,113 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert's Resume</title>
 
-    <head>
-        <link rel="stylesheet" href="styles/index.css">
-    </head>
-
-    <header>
-        <div class="grid grid-header">
-            <div class="grid-header-sections">
-                <a class="grid-header-name">ROBERT CASE</a>
-                <a href="#projects" class="grid-header-item">Projects</a>
-                <a href="#certifications" class="grid-header-item">Certifications</a>
-                <a href="#experience" class="grid-header-item">Experience</a>
-            </div>
-            <div class="grid-header-links">
-                <a href="https://www.linkedin.com/in/robert-lee-case/">
-                    <img class="grid-link-img" src="resources/images/linkedin-icon.svg" alt="Robert's LinkedIn Profile">
-                </a>
-                <a href="https://github.com/KreaMuzik">
-                    <img class="grid-link-img" src="resources/images/github-icon.svg" alt="Robert's GitHub Profile">
-                </a>
-            </div>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<!-- HEADER -->
+<header>
+    <div class="container container-header">
+        <div class="sections">
+            <a class="item-name">ROBERT CASE</a>
+            <a href="#projects" class="item-sections">PROJECTS</a>
+            <a href="#experience" class="item-sections">EXPERIENCE</a>
+            <a href="#certifications" class="item-sections">CERTIFICATIONS</a>
         </div>
-    </header>
-
-    <body>
-        <div class="grid grid-summary">
-            <p class="grid-item-summary">Provides exceptional support and unforgettable experiences to clients. Overwhelming urge to tinker, find solutions, and expand my technical knowledge. Well organized, detail oriented documentor for steps, procedures, and solutions for future reference.</p>
+        <div class="links">
+            <a href="https://linkedin.com/in/robert-lee-case/"><img class="item-links" src="resources/images/linkedin-icon.svg" alt="Robert's LinkedIn Profile"></a>
+            <a href="https://github.com/KreaMuzik"><img class="item-links" src="resources/images/github-icon.svg" alt="Robert's GitHub Profile"></a>
         </div>
-
-        <h1 id="projects">Projects</h1>
-        
-        <div class="grid grid-projects">
-            <h2>Active</h2>
-            <div class="card card-projects">
+    </div>
+</header>
+<!-- BODY -->
+<body>
+    <div class="container container-summary">
+        <p class="item-summary">Provides exceptional support and unforgettable experiences to clients. Overwhelming urge to tinker, find solutions, and expand my technical knowledge. Well organized, detail oriented documentor for steps, procedures, and solutions for future reference.</p>
+    </div>
+    <div class="container container-projects">
+        <h1>PROJECTS</h1>
+        <div class="item-projects">
+            <h2>ACTIVE</h2>
+            <div class="card item-projects-active">
                 <h3>HomeLab</h3>
                 <p>Installed, configured, and maintains Proxmox VE 8.2 on home lab server with the following services/applications: <br><br> DNS, Proxy, VPN, Media (movies, shows, books, and music), Home Automation, Firewall, and Recipe book/shopping list manager</p>
             </div>
-            <div class="card card-projects">
+            <div class="card item-projects-active">
                 <h3>HTB Academy</h3>
                 <p>I'm currently working on completing as many modules as I'm able to become more proficient in my defesive skills against the dark arts!</p>
             </div>
-        </div>
-        <h2 style="grid-column: 2/7;">Completed</h3>
-        <div class="grid grid-projects">
-            <div class="card card-projects">
+            <h2>COMPLETED</h2>
+            <div class="card item-projects-completed">
                 <h3>RPI Travel Router</h3>
                 <p>Installed and configured OpenWRT on a RPI 3 B+ to create a travel router for my family and I.  We found this especially useful for setting up our 1 year old Son's network baby monitor while traveling.  This prevented us from having to reconfigure the camera everytime we changed locations/networks</p>
             </div>
-            <div class="card card-projects">
+            <div class="card item-projects-completed">
                 <h3>Home Automation</h3>
                 <p>Utilizing HomeAssistant OS (HAOS) to automate tasks for various devices in my home from lights, deadbolts, mobile push notifications for various events/locations of each other, etc..</p>
-            </div>            
+            </div>     
         </div>
-  
-        <h1 id="certifications">Certifications</h1>
-        <div class="grid grid-certifications">
-            <div class="card card-certifications">
-                <h3>CompTIA ITF+</h3>
-                <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
-            </div>
-            <div class="card card-certifications">
-                <h3>Coursera Python Programming</h3>
-                <a href="https://coursera.org/share/b6634f066d12a5db837e3cf9e1c09ab7">Verify here</a>
-            </div>
-            <div class="card card-certifications">
-                <h3>Coursera Google IT Support</h3>
-                <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
-            </div>
+    </div>
+    <div class="container container-experience">
+        <div class="grid-experience-item">
+            <h3 style="text-align: left;">Lead Facilities Coordinator</h3>
+            <li>Oversees the operations and maintenance of two offices, encompassing a total space of 200,000 square feet. Additionally, I am responsible for leading a team of seven Facilities Coordinators, Workplace Ambassador, Shipping & Receiving Coordinator, and Porter staff.</li>
+            <li>Responsible for managing a substantial operational budget of one million dollars. Ensures budget is in line with maintenance, projects, and other operational expenses within the budget period to avoid variances.</li>
+            <li>Oversees and coordinates the relationships with fifteen plus external vendors and suppliers. This involves sourcing, evaluating, and selecting vendors, and ensuring adherence to established service level agreements and performance standards. My responsibilities also include conducting regliar vendor performance reviews, addressing any issues or concerns that may arise, and identifying opportunities to optimize vendor relationships to drive value and achieve organizational goals</li>
+            <li>Diligently conducts facility walkthroughs to systematically assess the operational functionality and condition of the premises. To include promptly identifying and addressing repairs and proactively mitigating any potential hazards or safety concerns.</li>
+            <li>Maintaining AV equipment of 40+ conference rooms throughout the 160,000+ sqft. facility across 4 buildings with 9 floors of about 500 employees.</li>
+            <li>Providing some handyman services upon employees requests such as repairing E-desks, monitors, monitor arms, laptop trays, ergonomic Aeron chairs, conference room chairs, water machines, coffee machines, other breakroom appliances, etc.</li>
+            <li>Providing physical security support such as badge printing, badge access, requesting security vendor for our badging system and security cameras when issues arise.</li>
         </div>
-
-        <h1 id="experience" >Experience</h1>
-        <div class="grid grid-experience">
-            <div class="grid-experience-item">
-                <h3 style="text-align: left;">Lead Facilities Coordinator</h3>
-                <li>Oversees the operations and maintenance of two offices, encompassing a total space of 200,000 square feet. Additionally, I am responsible for leading a team of seven Facilities Coordinators, Workplace Ambassador, Shipping & Receiving Coordinator, and Porter staff.</li>
-                <li>Responsible for managing a substantial operational budget of one million dollars. Ensures budget is in line with maintenance, projects, and other operational expenses within the budget period to avoid variances.</li>
-                <li>Oversees and coordinates the relationships with fifteen plus external vendors and suppliers. This involves sourcing, evaluating, and selecting vendors, and ensuring adherence to established service level agreements and performance standards. My responsibilities also include conducting regliar vendor performance reviews, addressing any issues or concerns that may arise, and identifying opportunities to optimize vendor relationships to drive value and achieve organizational goals</li>
-                <li>Diligently conducts facility walkthroughs to systematically assess the operational functionality and condition of the premises. To include promptly identifying and addressing repairs and proactively mitigating any potential hazards or safety concerns.</li>
-                <li>Maintaining AV equipment of 40+ conference rooms throughout the 160,000+ sqft. facility across 4 buildings with 9 floors of about 500 employees.</li>
-                <li>Providing some handyman services upon employees requests such as repairing E-desks, monitors, monitor arms, laptop trays, ergonomic Aeron chairs, conference room chairs, water machines, coffee machines, other breakroom appliances, etc.</li>
-                <li>Providing physical security support such as badge printing, badge access, requesting security vendor for our badging system and security cameras when issues arise.</li>
-            </div>
-            <div class="grid-experience-item">
-                <h3 style="text-align: left;">Physcial Security Officer</h3>
-                <li>Regliarly conducted thorough patrols within the workplace premises to safeguard the well-being and security of employees, mitigating potential risks from any suspicious individuals or environmental safety hazards.</li>
-                <li>Responsible for creating a comprehensive daily report to the company’s headquarters, outlining significant events and occurrences that transpired during my shift.</li>
-                <li>Successflily developed and implemented a comprehensive Security Playbook for the Austin site, and subsequently ensured its ongoing adherence and effectivenessexpand my overall networking security knowledge as well as penetration tactics.
-            </div>
+        <div class="grid-experience-item">
+            <h3 style="text-align: left;">Physcial Security Officer</h3>
+            <li>Regliarly conducted thorough patrols within the workplace premises to safeguard the well-being and security of employees, mitigating potential risks from any suspicious individuals or environmental safety hazards.</li>
+            <li>Responsible for creating a comprehensive daily report to the company’s headquarters, outlining significant events and occurrences that transpired during my shift.</li>
+            <li>Successflily developed and implemented a comprehensive Security Playbook for the Austin site, and subsequently ensured its ongoing adherence and effectivenessexpand my overall networking security knowledge as well as penetration tactics.
         </div>
-        <br><br>
-    </body>
-
-    <footer>
-        <div class="grid grid-footer">
-            <div class="grid-footer-links">
-                <a class="grid-link" href="https://www.linkedin.com/in/robert-lee-case/">
-                    <img class="grid-link-img" src="resources/images/linkedin-icon.svg" alt="Robert's LinkedIn Profile">
-                </a>
-                <a href="https://github.com/KreaMuzik">
-                    <img class="grid-link-img" src="resources/images/github-icon.svg" alt="Robert's GitHub Profile">
-                </a>
-            </div>
-            <div class="grid-footer-items">
-                <p>Coded and designed by | Robert Case</p>
-                <a href="https://github.com/KreaMuzik/resume">Source code on GitHub</a>
-                <p>2024</p>
-            </div>
+    </div>
+    <div class="container container-certifications">
+        <div class="card card-certifications">
+            <h3>CompTIA ITF+</h3>
+            <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
         </div>
-    </footer>
-
+        <div class="card card-certifications">
+            <h3>Coursera Python Programming</h3>
+            <a href="https://coursera.org/share/b6634f066d12a5db837e3cf9e1c09ab7">Verify here</a>
+        </div>
+        <div class="card card-certifications">
+            <h3>Coursera Google IT Support</h3>
+            <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
+        </div>
+    </div>
+</body>
+<!-- FOOTER -->
+<footer>
+    <div class="container container-footer">
+        <div class="links links-footer">
+            <a href="https://linkedin.com/in/robert-lee-case/"><img class="item-links" src="resources/images/linkedin-icon.svg" alt="Robert's LinkedIn Profile"></a>
+            <a href="https://github.com/KreaMuzik"><img class="item-links" src="resources/images/github-icon.svg" alt="Robert's GitHub Profile"></a>
+        </div>
+        <div class="item-footer">
+            <p>Coded and designed by | Robert Case</p>
+            <a class="item-footer" href="https://github.com/KreaMuzik/resume">Source code on GitHub</a>
+        </div>
+    </div>
+</footer>
 </html>
