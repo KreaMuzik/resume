@@ -6,6 +6,11 @@
     <title>Robert's Resume</title>
 
     <link rel="stylesheet" href="styles/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <!-- HEADER -->
 <header>
@@ -28,30 +33,29 @@
         <p class="item-summary">Provides exceptional support and unforgettable experiences to clients. Overwhelming urge to tinker, find solutions, and expand my technical knowledge. Well organized, detail oriented documentor for steps, procedures, and solutions for future reference.</p>
     </div>
     <div class="container container-projects">
-        <h1>PROJECTS</h1>
-        <div class="item-projects">
-            <h2>ACTIVE</h2>
-            <div class="card item-projects-active">
-                <h3>HomeLab</h3>
-                <p>Installed, configured, and maintains Proxmox VE 8.2 on home lab server with the following services/applications: <br><br> DNS, Proxy, VPN, Media (movies, shows, books, and music), Home Automation, Firewall, and Recipe book/shopping list manager</p>
-            </div>
-            <div class="card item-projects-active">
-                <h3>HTB Academy</h3>
-                <p>I'm currently working on completing as many modules as I'm able to become more proficient in my defesive skills against the dark arts!</p>
-            </div>
-            <h2>COMPLETED</h2>
-            <div class="card item-projects-completed">
-                <h3>RPI Travel Router</h3>
-                <p>Installed and configured OpenWRT on a RPI 3 B+ to create a travel router for my family and I.  We found this especially useful for setting up our 1 year old Son's network baby monitor while traveling.  This prevented us from having to reconfigure the camera everytime we changed locations/networks</p>
-            </div>
-            <div class="card item-projects-completed">
-                <h3>Home Automation</h3>
-                <p>Utilizing HomeAssistant OS (HAOS) to automate tasks for various devices in my home from lights, deadbolts, mobile push notifications for various events/locations of each other, etc..</p>
-            </div>     
+        <h1 id="projects">PROJECTS</h1>
+        <h2>ACTIVE</h2>
+        <div class="card item-projects">
+            <h3>HomeLab</h3>
+            <p>Installed, configured, and maintains Proxmox VE 8.2 on home lab server with the following services/applications: <br><br> DNS, Proxy, VPN, Media (movies, shows, books, and music), Home Automation, Firewall, and Recipe book/shopping list manager</p>
         </div>
+        <div class="card item-projects">
+            <h3>HTB Academy</h3>
+            <p>I'm currently working on completing as many modules as I'm able to become more proficient in my defesive skills against the dark arts!</p>
+        </div>
+        <h2>COMPLETED</h2>
+        <div class="card item-projects">
+            <h3>RPI Travel Router</h3>
+            <p>Installed and configured OpenWRT on a RPI 3 B+ to create a travel router for my family and I.  We found this especially useful for setting up our 1 year old Son's network baby monitor while traveling.  This prevented us from having to reconfigure the camera everytime we changed locations/networks</p>
+        </div>
+        <div class="card item-projects">
+            <h3>Home Automation</h3>
+            <p>Utilizing HomeAssistant OS (HAOS) to automate tasks for various devices in my home from lights, deadbolts, mobile push notifications for various events/locations of each other, etc..</p>
+        </div> 
     </div>
     <div class="container container-experience">
-        <div class="grid-experience-item">
+        <h1 id="experience">EXPERIENCE</h1>
+        <div class="item-experience">
             <h3 style="text-align: left;">Lead Facilities Coordinator</h3>
             <li>Oversees the operations and maintenance of two offices, encompassing a total space of 200,000 square feet. Additionally, I am responsible for leading a team of seven Facilities Coordinators, Workplace Ambassador, Shipping & Receiving Coordinator, and Porter staff.</li>
             <li>Responsible for managing a substantial operational budget of one million dollars. Ensures budget is in line with maintenance, projects, and other operational expenses within the budget period to avoid variances.</li>
@@ -61,7 +65,7 @@
             <li>Providing some handyman services upon employees requests such as repairing E-desks, monitors, monitor arms, laptop trays, ergonomic Aeron chairs, conference room chairs, water machines, coffee machines, other breakroom appliances, etc.</li>
             <li>Providing physical security support such as badge printing, badge access, requesting security vendor for our badging system and security cameras when issues arise.</li>
         </div>
-        <div class="grid-experience-item">
+        <div class="item-experience">
             <h3 style="text-align: left;">Physcial Security Officer</h3>
             <li>Regliarly conducted thorough patrols within the workplace premises to safeguard the well-being and security of employees, mitigating potential risks from any suspicious individuals or environmental safety hazards.</li>
             <li>Responsible for creating a comprehensive daily report to the company’s headquarters, outlining significant events and occurrences that transpired during my shift.</li>
@@ -69,15 +73,16 @@
         </div>
     </div>
     <div class="container container-certifications">
-        <div class="card card-certifications">
+        <h1 id="certifications">CERTIFICATIONS</h1>
+        <div class="card item-certifications">
             <h3>CompTIA ITF+</h3>
             <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
         </div>
-        <div class="card card-certifications">
+        <div class="card item-certifications">
             <h3>Coursera Python Programming</h3>
             <a href="https://coursera.org/share/b6634f066d12a5db837e3cf9e1c09ab7">Verify here</a>
         </div>
-        <div class="card card-certifications">
+        <div class="card item-certifications">
             <h3>Coursera Google IT Support</h3>
             <a href="https://www.credly.com/users/robert-case.aa5e8281">Verify here</a>
         </div>
