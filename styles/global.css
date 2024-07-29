@@ -1,8 +1,16 @@
+header {
+    background-color: #182D35;
+}
+
 body {
     font-family: Titillium Web;
     background-color: #0D191E;
     color: white;
     margin: 0;
+}
+
+footer {
+    background-color: #182D35;
 }
 
 h1{
@@ -17,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-family: ;
+    font-family: Titillium Web;
 }
 
 .sections {
@@ -45,31 +53,8 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(100px, 1fr);
     padding: 25px;
-}
-
-.container-header {
-    background-color: #182D35;
-}
-
-.container-projects {
-    justify-self: center;
-    align-self: center;
     gap: 15px;
-}
-
-.container-experience {
-    grid-column: 2/4;
-    justify-self: center;
-    align-self: center;
-}
-
-.container-certifications {
     place-items: center;
-}
-
-.container-footer {
-    background-color: #182D35;
-    column-width: span 4;
 }
 
 .item-name {
