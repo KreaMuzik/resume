@@ -1,2 +1,1 @@
-# krakenskull.net
-krakenskull.net
+# Resume Website
