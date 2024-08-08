@@ -1,126 +1,176 @@
-header {
-    background-color: #182D35;
+/*
+## GLOBAL CLASSES ##
+*/
+#background {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
 }
 
 body {
-    font-family: Titillium Web;
-    background-color: #0D191E;
     color: white;
-    margin: 0;
+    font: 22px Ubuntu;
+    line-height: 2rem;
+    margin: 100px 15% 100px 15%;
 }
 
 footer {
-    background-color: #182D35;
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 35px;
+    background-color: rgba(48, 48, 48, 80%);
+    min-height: 20px;
+    text-align: center;
+    padding: 18px;
+    margin: 150px 0;
+    text-decoration: none;
 }
 
-h1{
-    grid-column: span 4;
-    align-self: center;
-    justify-self: center;
+h1,h2,h3 {
+    color: rgb(0, 162, 255);
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: left;
 }
 
 h2 {
-    grid-column: 2/5;
-    justify-self: start;
+    color: whitesmoke;
 }
 
-h3 {
-    font-family: Titillium Web;
+h4 {
+    color: rgb(0, 162, 255)
 }
 
-.sections {
-    grid-column: span 3;
-    align-self: center;
-    justify-self: start;
-}
-
-.links {
-    grid-column: span 1;
-    align-self: center;
-    justify-self: end;
-    padding: 0 35px 0 0;
-}
-
-.links-footer {
-    grid-column: span 4;
-    justify-self: center;
-    align-self: center;
-}
-
-.container {
+.container-page {
     display: grid;
-    border: 1px red solid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px, 1fr);
-    padding: 25px;
-    gap: 15px;
-    place-items: center;
+    grid-template-columns: 425px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
 }
 
-.item-name {
-    font: 70px bold;
-    padding: 0 60px 0 30px;
-    font-family: "Bebas Neue", sans-serif;
-}
-
-.item-sections {
-    font: 20px Arial;
-    padding: 8px;
+.button {
+    background-color: rgba(0, 162, 255, 10%);
+    display: flex;
+    margin-top: 12px;
+    transition: 0.4s;
+    border: 2.5px solid white;
+    border-radius: 25px;
+    font-size: 17px;
     text-decoration: none;
     color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    justify-content: space-evenly;
 }
 
-.item-links {
-    width: 45px;
-    height: 45px;
-    padding: 8px;
+.download {
+    background-color: rgba(255, 0, 0, 10%);
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.item-summary {
-    grid-column: 2/4;
-    justify-self: center;
-    align-self: center;
+.button:hover {
+    color: rgb(0, 162, 255);
+    border: 2.5px solid rgb(0, 162, 255);
+}
+
+/* 
+## HEADER CONTAINER ##
+*/
+
+.container-header {
+    color: white;
+    background-color: rgba(94, 94, 94, 80%);
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 36px;
     text-align: center;
-    font-size: 35px;
+    padding: 30px;
+    grid-row: auto;
+    max-height: 100%;
+    padding: 50px;
+    position: relative;
 }
 
-.item-projects {
-    justify-self: center;
+.profile-picture {
+    border: 4px solid rgb(0, 162, 255);
+    width: 160px;
+    border-radius: 100px;
+    box-shadow: 0 0 100px -5px rgba(0, 195, 255, 0.25);
+}
+
+.social-links {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.social-icons {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0 5px 30px 5px;
+}
+
+/*
+## NAV CONTAINER ##
+*/
+/*
+## CONTENT CONTAINER ##
+*/
+.container-content {
+    background-color: rgba(48, 48, 48, 80%);
+    border: 3px solid rgb(0, 162, 255);
+    border-radius: 36px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
     align-self: center;
 }
 
-.item-projects-active {
-    grid-column: span 1;
-    justify-self: start;
-    align-self: start;
+.summary {
     text-align: center;
 }
 
-.item-certifications {
-  
+.nav-buttons {
+    width: 100%;
 }
 
-.item-experience {
-    grid-column: 2/4;
-    padding: 20px;
-    font-size: 30px;
+.home {
+    text-align: center;
 }
 
-.item-footer {
-    grid-column: span 4;
-    justify-self: center;
-    align-self: center;
+.resume {
+    text-align: left;
+}
+
+.certifications {
+    text-align: left;
+}
+
+.bar {
+    color: rgb(0, 162, 255);
+}
+
+.status-active {
+    color: green;
+}
+
+.status-completed {
+    color: gray;
+}
+
+/*
+## FOOTER ##
+*/
+.footer-links {
     text-decoration: none;
     color: white;
-}
-
-.card {
-    background-color: white;
-    color: black;
-    font-family: Titillium Web;
-    box-shadow: 0 4px 8px 0 rgb(255, 191, 0);
-    padding: 8px;
-    border-radius: 5px;
-    min-width: 600px;
-    min-height: 200px;
+    text-decoration: underline;
+    color: rgb(0, 162, 255);
 }
